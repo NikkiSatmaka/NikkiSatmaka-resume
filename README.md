@@ -1,4 +1,4 @@
-# My Resume
+# My Résumé
 
 This is my resume created with [**Awesome CV**](https://github.com/posquit0/Awesome-CV)
 
@@ -8,9 +8,13 @@ This is my resume created with [**Awesome CV**](https://github.com/posquit0/Awes
 
 You can see [PDF](nikki/resume.pdf)
 
-| Page. 1 | Page. 2 |
+| Page. 1 |
+|:---:|
+| [![Résumé](nikki/resume-0.png)](nikki/resume.pdf)
+
+| Page. 2 | Page. 3 |
 |:---:|:---:|
-| [![Résumé](nikki/resume-0.png)](nikki/resume.pdf) | [![Résumé](nikki/resume-1.png)](nikki/resume.pdf) |
+| [![Résumé](nikki/resume-1.png)](nikki/resume.pdf) | [![Résumé](nikki/resume-2.png)](nikki/resume.pdf) |
 
 <!-- ## Cover Letter
 
