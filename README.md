@@ -103,6 +103,8 @@ latexmk -pvc examples/resume.tex
 
 The existing `make resume.pdf`, `make cv.pdf`, and `make coverletter.pdf` shortcuts also write to `build/`. For your own document, run `latexmk your-cv.tex` from the repository root; keep its input and image paths relative to that root.
 
+Your personal documents live in `nikki/`. Build them from the repository root with `make nikki`; PDFs and auxiliary files go to `build/nikki/`, separate from the upstream examples. To build one personal document, run `latexmk -outdir=build/nikki nikki/resume.tex` (substitute `cv.tex` or `coverletter.tex`). Inputs and images in these files use paths relative to the repository root.
+
 The shared [latexmkrc](latexmkrc) selects LuaLaTeX, enables SyncTeX, stops on compilation errors, and lets latexmk rerun the compiler and track dependencies. Repeating a build without changes skips compilation.
 
 Use `make clean` (or `latexmk -c`) to remove the examples' auxiliary files while keeping their PDFs. Use `make distclean` (or `latexmk -C`) to remove the generated example PDFs as well. To clean a custom document, pass its filename, for example `latexmk -C your-cv.tex`.
