@@ -1,68 +1,27 @@
-<h1 align="center">
-  <a href="https://github.com/posquit0/Awesome-CV" title="AwesomeCV Documentation">
-    <img alt="AwesomeCV" src="https://github.com/posquit0/Awesome-CV/raw/master/icon.png" width="200px" height="200px" />
-  </a>
-  <br />
-  Awesome CV
-</h1>
+# My Résumé
 
-<p align="center">
-  LaTeX template for your outstanding job application
-</p>
+This is my resume created with [**Awesome CV**](https://github.com/posquit0/Awesome-CV)
 
-<div align="center">
-  <a href="https://www.paypal.me/posquit0">
-    <img alt="Donate" src="https://img.shields.io/badge/Donate-PayPal-blue.svg" />
-  </a>
-  <a href="https://github.com/posquit0/Awesome-CV/actions/workflows/main.yml">
-    <img alt="GitHub Actions" src="https://github.com/posquit0/Awesome-CV/actions/workflows/main.yml/badge.svg" />
-  </a>
-  <a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf">
-    <img alt="Example Resume" src="https://img.shields.io/badge/resume-pdf-green.svg" />
-  </a>
-  <a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/cv.pdf">
-    <img alt="Example CV" src="https://img.shields.io/badge/cv-pdf-green.svg" />
-  </a>
-  <a href="https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf">
-    <img alt="Example Coverletter" src="https://img.shields.io/badge/coverletter-pdf-green.svg" />
-  </a>
-</div>
+# Preview
 
-<br />
+## Résumé
 
-## What is Awesome CV?
-
-**Awesome CV** is LaTeX template for a **CV(Curriculum Vitae)**, **Résumé** or **Cover Letter** inspired by [Fancy CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv). It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
-
-
-## Donate
-
-Please help keep this project alive! Donations are welcome and will go towards further development of this project.
-
-    PayPal: paypal.me/posquit0
-
-*Thank you for your support!*
-
-## Preview
-
-#### Résumé
-
-You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)
+You can see [PDF](nikki/resume.pdf)
 
 | Page. 1 | Page. 2 |
 |:---:|:---:|
-| [![Résumé](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-0.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)  | [![Résumé](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume-1.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf) |
+| [![Résumé](nikki/resume-0.png)](nikki/resume.pdf) | [![Résumé](nikki/resume-1.png)](nikki/resume.pdf) |
 
-#### Cover Letter
+<!-- ## Cover Letter
 
-You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf)
+You can see [PDF](nikki/coverletter.pdf)
 
 | Without Sections | With Sections |
 |:---:|:---:|
-| [![Cover Letter(Traditional)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-0.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-1.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf) |
+| [![Cover Letter(Traditional)](nikki/coverletter-0.png)](nikki/coverletter.pdf)  | [![Cover Letter(Awesome)](nikki/coverletter-1.png)](nikki/coverletter.pdf) |
+ -->
 
-
-## Quick Start
+# Quick Start
 
 * [**Edit Résumé on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv/tvmzpvdjfqxp)
 * [**Edit Cover Letter on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/pfzzjspkthbk)
@@ -70,9 +29,9 @@ You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/e
 **_Note:_ These gallery templates may contain older source code. For this repository's version, upload its files and follow the Overleaf instructions below.**
 
 
-## How to Use
+<!-- # How to Use
 
-#### Requirements
+## Requirements
 
 Awesome CV uses **LuaLaTeX with HarfBuzz**, driven by **latexmk**. XeLaTeX and pdfLaTeX are not supported by this version of the class.
 
@@ -150,8 +109,9 @@ Run `make test` before submitting changes. The Docker image includes the PDF ins
 
 CI uploads PDFs, compiler logs, a JSON report, and page images from `build/` for review, including available diagnostics after a failure. Check the page images for layout changes; automated checks do not cover every visual detail. When changing build settings, keep `latexmkrc`, the editor configuration, the Dockerfile, and these instructions aligned.
 
+# Credit
 
-## Credit
+[**Awesome CV**](https://github.com/posquit0/Awesome-CV) is LaTeX template for a CV(Curriculum Vitae), Résumé or Cover Letter inspired by [Fancy CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv). It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
 
 [**LaTeX**](https://www.latex-project.org) is a fantastic typesetting program that a lot of people use these days, especially the math and computer science people in academia.
 
@@ -162,20 +122,22 @@ CI uploads PDFs, compiler logs, a JSON report, and page images from `build/` for
 [**Source Sans 3**](https://github.com/adobe-fonts/source-sans) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
 
 
-## Contact
+# Contact
 
 You are free to take my `.tex` file and modify it to create your own resume. Please don't use my resume for anything else without my permission, though!
 
-If you have any questions, feel free to join me at [`#posquit0` on Freenode](irc://irc.freenode.net/posquit0) and ask away. Click [here](https://kiwiirc.com/client/irc.freenode.net/posquit0) to connect.
+If you have any questions, feel free to contact me at [LinkedIn](https://www.linkedin.com/in/nikkisatmaka/) and ask away.
+
+<!-- If you have any questions, feel free to join me at [`#posquit0` on Freenode](irc://irc.freenode.net/posquit0) and ask away. Click [here](https://kiwiirc.com/client/irc.freenode.net/posquit0) to connect. -->
 
 Good luck!
 
 
-## Maintainers
+# Maintainers
 - [posquit0](https://github.com/posquit0)
 - [OJFord](https://github.com/OJFord)
 
 
-## See Also
+# See Also
 
 * [Awesome Identity](https://github.com/posquit0/hugo-awesome-identity) - A single-page Hugo theme to introduce yourself.

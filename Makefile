@@ -1,9 +1,9 @@
-.PHONY: examples resume.pdf cv.pdf coverletter.pdf test clean distclean
+.PHONY: nikki resume.pdf cv.pdf coverletter.pdf test clean distclean
 
 LATEXMK = latexmk
 PYTHON = python3
 
-examples:
+nikki:
 	$(LATEXMK)
 
 resume.pdf cv.pdf coverletter.pdf:
