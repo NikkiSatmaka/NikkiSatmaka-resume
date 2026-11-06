@@ -4,27 +4,33 @@ on:
   push: {}
   pull_request: {}
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: texlive/texlive:latest
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
-    - name: Install fonts
+    - name: Build TeX environment
+      run: docker build --tag awesome-cv .
+
+    - name: Compile and check PDFs
       run: |
-        apt update
-        apt install --yes \
-          fonts-roboto \
-          fonts-adobe-sourcesans3 \
-          ;
+        docker run --rm --user "$(id -u):$(id -g)" \
+          --volume "$PWD:/doc" awesome-cv make test
 
-    - name: Compile
-      run: make
-
-    - uses: actions/upload-artifact@v6
+    - uses: actions/upload-artifact@v7
+      if: always()
       with:
         name: examples
-        path: examples/*.pdf
+        path: |
+          build/*.pdf
+          build/*.log
+          build/tests/*.pdf
+          build/tests/*.log
+          build/quality/
+        if-no-files-found: error

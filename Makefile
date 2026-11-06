@@ -1,22 +1,20 @@
-.PHONY: nikki
+.PHONY: nikki resume.pdf cv.pdf coverletter.pdf test clean distclean
 
-CC = lualatex
-EXAMPLES_DIR = nikki
-RESUME_DIR = nikki/resume
-CV_DIR = nikki/cv
-RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
-CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
+LATEXMK = latexmk
+PYTHON = python3
 
-nikki: $(foreach x, coverletter cv resume, $x.pdf)
+nikki:
+	$(LATEXMK)
 
-resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+resume.pdf cv.pdf coverletter.pdf:
+	$(LATEXMK) examples/$(@:.pdf=.tex)
 
-cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
-
-coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
-	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+test: examples
+	$(LATEXMK) -outdir=build/tests tests/fixtures/*.tex
+	$(PYTHON) tests/check_pdfs.py
 
 clean:
-	rm -rf $(EXAMPLES_DIR)/*.pdf
+	$(LATEXMK) -c
+
+distclean:
+	$(LATEXMK) -C
