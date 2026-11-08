@@ -11,17 +11,30 @@
 
 %---------------------------------------------------------
   \cventry
+    {Senior Solutions Architect} % Job title
+    {PT Berca Hardayaperkasa} % Organization
+    {Jakarta, Indonesia} % Location
+    {Jun 2026 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Lead customer discovery and translate business priorities into cloud and AI architectures, scope, effort estimates, and proposals; present designs and guide engineering teams through delivery}
+        \item {Developed production Terraform automation for recurring AI workshops, provisioning access for 30--70 participants in about 10--15 minutes versus 5--15 minutes of manual setup per user; admins retain oversight for exceptions}
+        \item {Lead customer enablement workshops, present architecture and milestones to client stakeholders, and coordinate engineering work on engagements without a dedicated PMO}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
     {AI / Data Platform Engineer} % Job title
     {Rey.id - PT Vertika Technologies Nusantara} % Organization
     {Jakarta, Indonesia} % Location
-    {May 2025 - Present} % Date(s)
+    {May 2025 - May 2026} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed and maintained scalable data pipelines supporting analytics and operational reporting across multiple business domains}
-        \item {Integrated diverse internal and third-party data sources, building reliable ingestion and transformation workflows}
-        \item {Improved the performance and reliability of the existing data platform through pipeline optimization and workflow automation}
-        \item {Collaborated closely with product, analytics, and engineering teams to translate business requirements into robust data solutions}
-        \item {Automated operational processes using Airflow and Python, reducing manual effort and improving deployment efficiency}
+        \item {Owned development and maintenance of approximately 30--50 production Airflow pipelines loading PostgreSQL data from AWS RDS into BigQuery on hourly and daily schedules, including Python-based transformations}
+        \item {Built an AI document-processing API for insurance applications, extracting form fields into structured JSON and applying deterministic calculations; processing returned results in 30--60 seconds versus minutes of manual review}
+        \item {Selected Gemini through LiteLLM and Langfuse for the LLM workflow; implemented Python services, containerization, and Airflow-triggered processing with confidence-based human review and retry/resubmission paths}
+        \item {The document-processing system later reached production using the core AI logic and calculations I developed; another team owned downstream integration and scaling}
       \end{cvitems}
     }
 
@@ -33,11 +46,12 @@
     {May 2024 - May 2025} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed and implemented cloud-based data and analytics architectures for enterprise clients using AWS services}
-        \item {Advised project teams on scalable data platform design, including data ingestion, transformation, and analytics workflows}
-        \item {Evaluated emerging cloud technologies and proposed architectural improvements to enhance performance, reliability, and cost efficiency}
-        \item {Worked closely with cross-functional stakeholders to ensure technical solutions aligned with business requirements}
-        \item {Developed automation scripts and tooling to streamline infrastructure operations and reduce manual maintenance tasks}
+        \item {Designed and defended the winning end-to-end planogram-compliance solution for an FMCG general-trade division; the delivery team used my design to take the solution to production}
+        \item {Designed an executive HR chatbot on Amazon Bedrock, routing director questions between employee-profile PDFs in S3 and text-to-SQL workforce statistics through predefined functions; incorporated Google Workspace RBAC, layered guardrails, and client-provided evaluation questions with expected answers}
+        \item {Worked with client directors to refine chatbot features, including replacing keyword branching with an agentic router; reviewed engineers' implementation and helped troubleshoot code and container-build issues through production delivery}
+        \item {Designed the planogram workflow using Roboflow annotations, YOLO-based model development in SageMaker, and event-driven inference with SQS, EventBridge, Lambda, and Step Functions}
+        \item {Designed a phased Oracle-to-Aurora PostgreSQL migration to move away from Oracle licensing, initially scoped at roughly three mills and nine databases; estimated AWS cost and effort, designed the VPC/Aurora/DMS/SCT setup, and enabled delivery engineers to replicate the migration in batches}
+        \item {Led discovery, architecture presentations, estimates, scope, and proposal development across client engagements; delivery management and implementation ownership remained with the assigned delivery teams}
       \end{cvitems}
     }
 
@@ -49,13 +63,12 @@
     {Sep 2022 - Apr 2024} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed and implemented end-to-end data pipelines enabling reliable ingestion, transformation, and delivery of business-critical datasets}
-        \item {Built and maintained analytics infrastructure supporting data-driven decision making across multiple projects}
-        \item {Integrated heterogeneous data sources and ensured consistent data quality and availability}
-        \item {Collaborated with engineering and business teams to translate requirements into scalable data solutions}
-        \item {Automated operational workflows and data processes using Bash and Python scripting}
+        \item {Maintained Python pipelines processing network metrics from PRTG and Zabbix into MongoDB; migrated comparable Pandas workloads calculating thousands of devices' metrics to Polars, reducing runtime from 2--3 hours to 30--60 minutes}
+        \item {Initiated and implemented a MinIO data lake using bronze/silver/gold layers; the design continued in use after my tenure}
+        \item {Standardized Python development tooling and formatting practices, later adopted by the team including uv; implemented MongoDB-to-PostgreSQL schema conversion and periodic data synchronization}
       \end{cvitems}
     }
+
 
 %---------------------------------------------------------
   \cventry
